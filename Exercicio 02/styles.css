@@ -1,0 +1,39 @@
+/* Resetando */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e estilo geral */
+body {
+  background-color: #0d0d0d; /* fundo escuro estilo terminal */
+  color: #39ff14; /* verde neon tipo "código" */
+  font-family: 'Courier New', Courier, monospace; /* estilo hacker/geek */
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Títulos h1 e h2 */
+h1, h2 {
+  color: #00ffff; /* azul ciano estilo sci-fi */
+  margin-bottom: 10px;
+  text-shadow: 0 0 4px #00ffff;
+}
+
+/* Listas ul e ol */
+ul, ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Links */
+a {
+  color: #00bfff; /* azul neon */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}

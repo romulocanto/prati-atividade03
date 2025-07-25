@@ -1,0 +1,55 @@
+<!-- 3. Formulário de Feedback - Em arquivo feedback.html, construa um formulário que contenha:
+- Nome
+- E-mail
+- Endereço Completo
+- Tipo de feedback
+- Campo para o Feedback
+- Botão de Envio -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Desenvolvimento Web, HTML, CSS e Javascript">
+        <meta name="Author" content="Rômulo Canto">
+        <meta name="description" content="Esse é um site de cunho educativo">
+        <title>Atividade 03 - Exercício 03</title>
+        <!-- Adicionado um arquivo de estilos para dar uma embelezada na página -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Formulário de Feedback</h1>
+
+        <form method="post">
+    
+            <!-- Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <!-- E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Endereço completo -->
+            <label for="endereco">Endereço Completo:</label>
+            <input type="text" id="endereco" name="endereco">
+
+            <!-- Tipo de feedback -->
+            <label for="tipo">Tipo de Feedback:</label>
+            <select id="tipo" name="tipo">
+                <option value="elogio">Elogio</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="critica">Crítica</option>
+            </select>
+
+            <!-- Campo de feedback -->
+            <label for="mensagem">Seu Feedback:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar Feedback</button>
+        </form>
+    </body>
+</html> 

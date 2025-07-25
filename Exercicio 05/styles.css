@@ -1,0 +1,74 @@
+/* 5. Seletores e Propriedades - No mesmo styles.css, adicione:
+- Um estilo para todas as tags <h2> que aumente a font-size e aplique text-decoration: underline.
+- Uma classe .destaque que deixe o texto em itálico (font-style: italic) e aplique um leve background-color.
+- Um ID #importante que adicione border-top mais espessa em um parágrafo específico. */
+
+/* Usado o style.css do exercicio 4 como base */
+
+/* Resetando */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #4a90e2; 
+  color: #ffffff;
+  padding: 30px;
+  margin: 30px;
+  border: 2px solid #2c5aa0;
+  border-radius: 6px;
+}
+
+/* Main */
+main {
+  background-color: #ffffff;
+  color: #222;
+  padding: 20px;
+  margin: 30px;
+  border: 2px dashed #999999;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: #f0f0f0;
+  padding: 15px;
+  border: 2px solid #666666;
+  margin: 30px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Estilo para todos os h2 */
+h2 {
+  font-size: 1.6em;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+/* Classe .destaque */
+.destaque {
+  font-style: italic;
+  background-color: #f9f9cc; 
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* ID #importante */
+#importante {
+  border-top: 4px solid #cc0000; 
+  padding-top: 10px;
+  margin-top: 20px;
+}

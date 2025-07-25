@@ -1,0 +1,98 @@
+/* Resetando */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e estilo geral */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0; 
+  color: #4a2e00;            
+}
+
+/* Cabeçalho */
+header {
+  background-color: #d2691e; 
+  color: #fff8e1;
+  padding: 20px;
+  position: relative;
+  border-bottom: 6px solid #a0522d; 
+}
+
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #00000020;
+}
+
+/* Navegação padrão */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #fff8e1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #ffcc33; 
+  color: #4a2e00;
+}
+
+/* Botão hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff8e1;
+  cursor: pointer;
+}
+
+/* Estilo do menu em telas pequenas */
+@media (max-width: 600px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f4a460; 
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav a {
+    padding: 10px;
+    background-color: #fff8e1; 
+    color: #4a2e00;
+    margin-bottom: 5px;
+    border: 1px solid #d2691e;
+  }
+
+  .nav a:hover {
+    background-color: #c0e57c; 
+  }
+}

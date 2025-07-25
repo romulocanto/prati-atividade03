@@ -1,0 +1,52 @@
+/* 4. CSS Básico e Box Model - Crie um arquivo styles.css e vincule-o em
+index.html:
+- Defina cores de fundo (background-color) e de texto (color) para <header>,
+<main> e <footer>.
+- Para cada uma dessas seções, aplique margin, padding e border de forma a
+evidenciar seus contornos. */
+
+/* Resetando */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #4a90e2; 
+  color: #ffffff;
+  padding: 30px;
+  margin: 30px;
+  border: 2px solid #2c5aa0;
+  border-radius: 6px;
+}
+
+/* Main */
+main {
+  background-color: #ffffff;
+  color: #222;
+  padding: 20px;
+  margin: 30px;
+  border: 2px dashed #999999;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: #f0f0f0;
+  padding: 15px;
+  border: 2px solid #666666;
+  margin: 30px;
+  text-align: center;
+  border-radius: 6px;
+}

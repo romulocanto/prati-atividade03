@@ -1,0 +1,71 @@
+/* Resetando */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e estilo geral */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Contêiner usando Flexbox para centralizar */
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* permite quebra em telas pequenas */
+}
+
+/* Galeria usando Grid */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas por padrão */
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+/* Cada figura */
+figure {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Responsividade com media queries */
+@media (max-width: 900px) {
+  .galeria-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}
